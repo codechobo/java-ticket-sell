@@ -8,7 +8,8 @@ public class Money {
         this.amount = amount;
     }
 
-    public Long getAmount() {
+    public Money plus(Money amount) {
+        this.amount += amount.amount;
         return amount;
     }
 }
