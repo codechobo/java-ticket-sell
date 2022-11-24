@@ -17,4 +17,8 @@ public class Invitation {
         this.from = from;
         this.createAt = LocalDateTime.now();
     }
+
+    public static Invitation of(String to, LocalDateTime when, String message, String from) {
+        return new Invitation(to, when, message, from);
+    }
 }
