@@ -12,4 +12,9 @@ public class Money {
         this.amount += amount.amount;
         return amount;
     }
+
+    public Money minus(Money amount) {
+        this.amount -= amount.amount;
+        return amount;
+    }
 }
