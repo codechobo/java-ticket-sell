@@ -2,7 +2,13 @@ package domain;
 
 public class Audience {
 
-    public void buy(Ticket ticket) {
+    private Bag bag;
 
+    public Audience(Bag bag) {
+        this.bag = bag;
+    }
+
+    public Money buy(Ticket ticket) {
+        return bag.hold(ticket);
     }
 }
